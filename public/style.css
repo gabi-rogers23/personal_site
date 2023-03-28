@@ -5,22 +5,22 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* .headerContainer {
+.headerContainer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     height: 150px;
     border: 1px solid black;
-} */
+}
 
-/* nav{
+nav{
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
     height: 70%;
-} */
+}
 
 .homeContainer {
     margin-top: 0px;
@@ -30,7 +30,7 @@ body {
 .nameLogo {
     text-align: center;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     width: 100%;
 }
@@ -56,6 +56,11 @@ body {
     letter-spacing: 3px;
     color: rgb(212, 50, 50);
     font-size: 30em;
+}
+
+.homeDetails {
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .navIcon {

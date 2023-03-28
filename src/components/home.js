@@ -1,4 +1,5 @@
 import React from "react";
+import {NavBar} from "./exports"
 
 const Home = () => {
   return (
@@ -15,9 +16,9 @@ const Home = () => {
           <h1>ogers</h1>
         </div>
       </div>
-        <div><h1>Fullstack Web Developer</h1></div>
+        <div className="homeDetails"><h1>Fullstack Web Developer</h1></div>
       <div>
-        About 
+        <NavBar /> 
       </div>
     </div>
   );

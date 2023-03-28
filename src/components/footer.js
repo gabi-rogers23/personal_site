@@ -1,7 +1,7 @@
 import React from "react";
 import { HiOutlineMail } from "react-icons/hi";
 import { TbBrandGithub } from "react-icons/tb";
-import { FiLinkedin } from "react-icons/fi";
+import { RiLinkedinBoxLine } from "react-icons/ri";
 
 const Footer = () => {
   return (
@@ -21,7 +21,7 @@ const Footer = () => {
         <li>,</li>
         <li>LinkedIn:</li>
         <li>
-        <FiLinkedin className="navIcon"/>
+        <RiLinkedinBoxLine className="navIcon"/>
         </li>
         <li>{"}"}</li>
       </ul>
