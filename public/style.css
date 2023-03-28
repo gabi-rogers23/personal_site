@@ -5,38 +5,57 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.headerContainer {
+/* .headerContainer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     height: 150px;
     border: 1px solid black;
-}
+} */
 
-h1 {
-    font-family: 'Six Caps', sans-serif;
-    letter-spacing: 3px;
-    color: rgb(212, 50, 50);
-    float: left;
-    padding-top: 35px;
-}
-
-nav{
+/* nav{
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
     height: 70%;
+} */
+
+.homeContainer {
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+
+.nameLogo {
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.name {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.name h1{
+    padding-top: 200px;
+    font-family: 'Six Caps', sans-serif;
+    font-size: 10em;
+    letter-spacing: 3px;
+    color: rgb(212, 50, 50);
 }
 
 .bigletter {
     font-family: 'Six Caps', sans-serif;
-    font-size: 7em;
     letter-spacing: 3px;
     color: rgb(212, 50, 50);
-    float: left;
-    padding-left: 10px;
+    font-size: 30em;
 }
 
 .navIcon {
@@ -49,10 +68,12 @@ nav{
     color: rgb(212, 50, 50);
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
     padding: 1rem;
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 50px;
     text-align: center;
     position: fixed;
 }

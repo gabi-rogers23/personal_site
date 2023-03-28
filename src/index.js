@@ -6,7 +6,6 @@ import { NavBar, Home, About, Projects, Footer } from "./components/exports"
 
 const App = () => {
   return (<div>
-    <NavBar />
     <Routes>
     <Route path="/" element={<Home />} />
     <Route path='/about' element={<About />} />

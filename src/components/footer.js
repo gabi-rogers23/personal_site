@@ -7,7 +7,9 @@ const Footer = () => {
   return (
     <div className="footerContainer">
       <ul>
-        <li>Contact Gabrielle Rogers</li>
+        <li>contact</li>
+        <li>{"=>"}</li>
+        <li>{"("}</li>
         <li>
           <HiOutlineMail className="navIcon" /> 
         </li>
@@ -19,6 +21,7 @@ const Footer = () => {
         <li>
          <FiLinkedin className="navIcon"/>
         </li>
+        <li>{")"}</li>
       </ul>
     </div>
   );
