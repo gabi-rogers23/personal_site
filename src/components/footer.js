@@ -8,20 +8,22 @@ const Footer = () => {
     <div className="footerContainer">
       <ul>
         <li>contact</li>
-        <li>{"=>"}</li>
-        <li>{"("}</li>
+        <li>{"="}</li>
+        <li>{"{ email:  "}</li>
         <li>
-          <HiOutlineMail className="navIcon" /> 
+           <HiOutlineMail className="navIcon" /> 
         </li>
-        <li>|</li>
+        <li>,</li>
+        <li>GitHub:  </li>
         <li>
-          <TbBrandGithub className="navIcon" />
+            <TbBrandGithub className="navIcon" />
         </li>
-        <li>|</li>
+        <li>,</li>
+        <li>LinkedIn:</li>
         <li>
-         <FiLinkedin className="navIcon"/>
+        <FiLinkedin className="navIcon"/>
         </li>
-        <li>{")"}</li>
+        <li>{"}"}</li>
       </ul>
     </div>
   );

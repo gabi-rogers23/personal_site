@@ -40,11 +40,11 @@ body {
     flex-flow: row nowrap;
     justify-content: center;
     justify-content: center;
-    padding: 50px;
+    padding-left: 50px;
 }
 
 .name h1{
-    padding-top: 200px;
+    padding-top: 100px;
     font-family: 'Six Caps', sans-serif;
     font-size: 10em;
     letter-spacing: 3px;
