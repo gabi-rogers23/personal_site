@@ -5,14 +5,25 @@ import { RiHomeHeartFill, RiQuestionnaireFill } from "react-icons/ri";
 function NavBar() {
   return (
     <div className="headerContainer">
-      <nav>
-      <NavLink to="/" end>
-        {<RiHomeHeartFill className="navIcon"/>}
-      </NavLink>
-      <NavLink to="/about" end>
-        {<RiQuestionnaireFill className="navIcon"/>}
-      </NavLink>
-      <NavLink to="/projects">Projects</NavLink>
+      <nav className="nav-links">
+        <li>
+          <NavLink to="/" end activeClassName="active">
+            {<RiHomeHeartFill />}
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink to="/about" activeClassName="active">
+            \ABOUT/
+            {<RiQuestionnaireFill />}
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink to="/projects" activeClassName="active">
+            PROJECTS
+          </NavLink>
+        </li>
       </nav>
     </div>
   );
