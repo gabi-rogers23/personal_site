@@ -1,11 +1,10 @@
 import React from "react";
-import {NavBar} from "./exports"
+import { NavBar } from "./exports";
 
 const Home = () => {
   return (
     <div className="homeContainer">
       <div className="nameLogo">
-
         <div className="name">
           <div className="bigletter">G</div>
           <h1>abrielle</h1>
@@ -17,8 +16,11 @@ const Home = () => {
         </div>
       </div>
       <div>
-        <div className="homeDetails">• Fullstack Web Developer •</div>
-        
+        <div className="homeDetails">
+          <div><i>Fullstack Web Developer</i></div>
+          <button>• About •</button>
+          <button>• Projects •</button>
+        </div>
       </div>
     </div>
   );
