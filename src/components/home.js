@@ -16,9 +16,9 @@ const Home = () => {
           <h1>ogers</h1>
         </div>
       </div>
-        <div className="homeDetails"><h2><i>Fullstack Web Developer</i></h2></div>
       <div>
-        <NavBar /> 
+        <div className="homeDetails">• Fullstack Web Developer •</div>
+        
       </div>
     </div>
   );
