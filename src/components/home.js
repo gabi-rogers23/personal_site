@@ -21,14 +21,14 @@ const navigate = useNavigate()
       <div>
         <div className="homeDetails">
           <div><i>Fullstack Web Developer</i></div>
-          <button onClick={((e)=>{
+          <div><button onClick={((e)=>{
             e.preventDefault();
             navigate("/about")
           })}>• About •</button>
           <button onClick={((e)=>{
             e.preventDefault();
             navigate("/projects")
-          })}>• Projects •</button>
+          })}>• Projects •</button></div>
         </div>
       </div>
     </div>
