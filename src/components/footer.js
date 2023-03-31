@@ -11,17 +11,17 @@ const Footer = () => {
         <li>{"="}</li>
         <li>{"{ email:  "}</li>
         <li>
-        <a href="mailto:gabirogers23@gmail.com"> <HiOutlineMail className="navIcon" /> </a>
+        <a href="mailto:gabirogers23@gmail.com" > <HiOutlineMail className="navIcon" /> </a>
         </li>
         <li>,</li>
         <li>GitHub:  </li>
         <li>
-          <a href="https://github.com/gabi-rogers23">  <TbBrandGithub className="navIcon" /></a>
+          <a href="https://github.com/gabi-rogers23" target="_blank">  <TbBrandGithub className="navIcon" /></a>
         </li>
         <li>,</li>
         <li>LinkedIn:</li>
         <li>
-        <a href="https://www.linkedin.com/in/rogers-gabrielle/"><RiLinkedinBoxLine className="navIcon"/></a>
+        <a href="https://www.linkedin.com/in/rogers-gabrielle/" target="_blank"><RiLinkedinBoxLine className="navIcon"/></a>
         </li>
         <li>{"}"}</li>
       </ul>
