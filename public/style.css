@@ -70,6 +70,10 @@ nav {
   text-decoration: underline;
 }
 
+.navIcon {
+    font-size: 25px;
+}
+
 .active {
   color: white;
 }
@@ -139,4 +143,8 @@ nav {
   height: 75px;
   text-align: center;
   position: fixed;
+}
+
+.footerContainer a {
+    color: rgb(212, 50, 50);
 }
