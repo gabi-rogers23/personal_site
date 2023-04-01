@@ -15,7 +15,6 @@ button {
   color: rgb(212, 50, 50);
   outline: none;
   background-color: transparent;
-  border: none;
   text-transform: uppercase;
   padding-top: 6px;
   padding-bottom: 5px;
@@ -24,11 +23,13 @@ button {
   margin: 5px;
   letter-spacing: 3px;
   text-align: center;
+  border: 1px solid rgb(212, 50, 50);
 }
+
 
 button:hover {
   color: white;
-  border-bottom: 1px solid white;
+  border: 1px solid white;
 }
 
 ul {
@@ -124,14 +125,16 @@ li {
 .headerContainer {
   width: 100%;
   background-color: rgb(243, 191, 177);
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .header {
+  width: 70%;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  justify-content: space-between;
-  margin-left: 50px;
+  justify-content: center;
 }
 
 .navNameLogo {
@@ -158,18 +161,17 @@ li {
 }
 
 .navContainer {
-  height: 120px;
+  width: 15%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: space-around;
-  margin: 25px;
-  margin-right: 75px;
+  justify-content: space-evenly;
 }
 
 .nav_link {
   text-decoration: none;
   color: rgb(212, 50, 50);
+  padding: 3px;
 }
 
 .nav_link:hover {
@@ -178,5 +180,21 @@ li {
 }
 
 .active {
-  border-bottom: 0.5px solid rgb(212, 50, 50);
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+
+/* ABOUT */
+
+.aboutContainer {
+  margin: 25px;
+}
+
+.aboutContainer h1{
+  color: rgb(212, 50, 50);
+}
+
+.aboutParagraphs {
+
 }
