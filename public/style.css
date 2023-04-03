@@ -188,13 +188,29 @@ li {
 /* ABOUT */
 
 .aboutContainer {
+  display: flex;
+  flex-flow: column nowrap;
   margin: 25px;
+  margin-bottom: 100px;
+}
+
+.selfContainer{
+  
 }
 
 .aboutContainer h1{
   color: rgb(212, 50, 50);
+  text-align: center;
 }
 
 .aboutParagraphs {
 
+}
+
+.self {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
 }
