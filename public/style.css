@@ -199,6 +199,7 @@ li {
 .selfContainer{
   position: relative;
   margin-top: 25px;
+  display: block;
 }
 
 .self {
@@ -207,6 +208,8 @@ li {
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
+  /* border: 1px solid rgb(212, 50, 50); */
+  box-shadow: 5px 10px 18px white
 }
 
 .aboutContainer h1{
@@ -215,6 +218,12 @@ li {
   position: absolute;
   margin-top: -50px;
   margin-left: 290px;
+  animation: mymove 3s;
+}
+
+@keyframes mymove {
+  from {top:-0px;}
+  to {top: 306px;}
 }
 
 .start{
@@ -224,5 +233,7 @@ li {
 
 .aboutParagraphs {
   margin-top: 25px;
+  max-width: 900px;
+  text-align: center;
 }
 
