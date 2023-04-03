@@ -9,7 +9,8 @@ const Footer = () => {
       <ul>
         <li>contact</li>
         <li>{"="}</li>
-        <li>{"{ email:  "}</li>
+        <li>{"{"}</li>
+        <li>{"email:  "}</li>
         <li>
         <a href="mailto:gabirogers23@gmail.com" > <HiOutlineMail className="navIcon" /> </a>
         </li>

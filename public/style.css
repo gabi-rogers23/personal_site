@@ -52,6 +52,24 @@ li {
 .homeContainer {
   margin-top: 0px;
   margin-bottom: 100px;
+
+    animation: 1.5s fadeInUp;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 .nameLogo {
@@ -60,7 +78,6 @@ li {
   flex-flow: row wrap;
   justify-content: center;
   width: 100%;
-  height: auto;
   padding: 0;
 }
 
@@ -70,6 +87,7 @@ li {
   justify-content: center;
   justify-content: center;
   padding-left: 50px;
+
 }
 
 .name h1 {
@@ -218,12 +236,7 @@ li {
   position: absolute;
   margin-top: -50px;
   margin-left: 290px;
-  animation: mymove 3s;
-}
-
-@keyframes mymove {
-  from {top:-0px;}
-  to {top: 306px;}
+  animation: fadeInUp 2s;
 }
 
 .start{
@@ -236,4 +249,3 @@ li {
   max-width: 900px;
   text-align: center;
 }
-
