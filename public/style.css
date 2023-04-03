@@ -190,21 +190,15 @@ li {
 .aboutContainer {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   margin: 25px;
   margin-bottom: 100px;
 }
 
 .selfContainer{
-  
-}
-
-.aboutContainer h1{
-  color: rgb(212, 50, 50);
-  text-align: center;
-}
-
-.aboutParagraphs {
-
+  position: relative;
+  margin-top: 25px;
 }
 
 .self {
@@ -214,3 +208,21 @@ li {
   object-fit: cover;
   object-position: center;
 }
+
+.aboutContainer h1{
+  color: rgb(212, 50, 50);
+  text-align: center;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 290px;
+}
+
+.start{
+  color: rgb(212, 50, 50);
+  font-size: 1.4em;
+}
+
+.aboutParagraphs {
+  margin-top: 25px;
+}
+
