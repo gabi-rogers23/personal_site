@@ -205,6 +205,10 @@ li {
 
 /* ABOUT */
 
+.about{
+  margin-top: 100px;
+}
+
 .aboutContainer {
   display: flex;
   flex-flow: column nowrap;
