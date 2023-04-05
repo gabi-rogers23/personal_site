@@ -1,9 +1,8 @@
 import React from "react";
-import {NavBar} from "./exports"
 const self = require("./assets/Rogers_Gabrielle.jpeg")
 
 const About = () => {
-    return(  <> <NavBar/>
+    return(
     <div className="aboutContainer">
         <div className="selfContainer"><img className="self" src={self}></img><h1>HELLO.</h1></div>
         <div className="aboutParagraphs">
@@ -16,7 +15,7 @@ Most recently, I worked as a digital court reporter, where I used my communicati
 <p/>
 <br/>
 Overall, I am excited to bring my artistic sensibility and problem-solving skills to the field of software engineering. I believe that my diverse background in design and communication has given me a unique perspective that will allow me to approach coding challenges in a creative and innovative way. I am looking forward to continuing to learn and grow in this exciting field!</div>
-    </div></>)
+    </div>)
 }
 
 export default About;

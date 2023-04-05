@@ -249,3 +249,10 @@ li {
   max-width: 900px;
   text-align: center;
 }
+
+/* Projects */
+
+.projectsContainer {
+  width: 100%;
+  height: 800px;
+}

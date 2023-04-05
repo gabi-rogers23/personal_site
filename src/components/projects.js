@@ -1,7 +1,7 @@
 import React from "react";
 
 const Projects = () => {
-    return(<div>
+    return(<div className="projectsContainer">
         This is the Projects Page
     </div>)
 }
