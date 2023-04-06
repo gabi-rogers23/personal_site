@@ -26,7 +26,6 @@ button {
   border: 1px solid rgb(212, 50, 50);
 }
 
-
 button:hover {
   color: white;
   border: 1px solid white;
@@ -46,14 +45,15 @@ li {
 }
 
 .navIcon {
-  font-size: 25px;
+  font-size: 15px;
+  color: rgb(212, 50, 50);
 }
 
+/* HOME */
 .homeContainer {
-  margin-top: 0px;
+  margin-top: -50px;
   margin-bottom: 100px;
-
-    animation: 1.5s fadeInUp;
+  animation: 1.5s fadein;
 }
 
 @keyframes fadeInUp {
@@ -68,8 +68,12 @@ li {
 }
 
 @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .nameLogo {
@@ -87,7 +91,6 @@ li {
   justify-content: center;
   justify-content: center;
   padding-left: 50px;
-
 }
 
 .name h1 {
@@ -111,7 +114,7 @@ li {
   text-align: center;
   color: rgb(212, 50, 50);
   letter-spacing: 3px;
-  margin-top: 15px;
+  margin-top: 45px;
   font-size: 1.5em;
   display: flex;
   flex-flow: column wrap;
@@ -119,26 +122,22 @@ li {
   align-items: center;
 }
 
-.footerContainer {
-  background-color: rgb(243, 191, 177);
-  color: rgb(212, 50, 50);
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 75px;
-  text-align: center;
-  position: fixed;
+.downArrow {
+  margin-top: 25px;
+  animation: MoveUpDown 1.5s linear infinite;
 }
 
-.footerContainer a {
-  color: rgb(212, 50, 50);
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
-/* NavBar CSS */
+/* NAVBAR */
 
 .headerContainer {
   width: 100%;
@@ -202,26 +201,32 @@ li {
   color: white;
 }
 
-
 /* ABOUT */
 
-.about{
-  margin-top: 100px;
+.about {
+  margin-top: 50px;
+}
+
+.hello {
+  color: rgb(212, 50, 50);
+  font-size: 3.5em;
+  letter-spacing: 3px;
+  text-align: center;
 }
 
 .aboutContainer {
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: space-between;
   align-items: center;
-  margin: 25px;
-  margin-bottom: 100px;
 }
 
-.selfContainer{
-  position: relative;
-  margin-top: 25px;
-  display: block;
+.selfContainer {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .self {
@@ -230,33 +235,50 @@ li {
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
-  /* border: 1px solid rgb(212, 50, 50); */
-  box-shadow: 5px 10px 18px white
+  box-shadow: 5px 10px 18px white;
 }
 
-.aboutContainer h1{
-  color: rgb(212, 50, 50);
-  text-align: center;
-  position: absolute;
-  margin-top: -50px;
-  margin-left: 290px;
-  animation: fadeInUp 2s;
-}
-
-.start{
+.start {
   color: rgb(212, 50, 50);
   font-size: 1.4em;
 }
 
 .aboutParagraphs {
-  margin-top: 25px;
-  max-width: 900px;
-  text-align: center;
+  width: 30%;
+  padding: 25px;
+  text-align: left;
+  flex-grow: 2;
 }
 
-/* Projects */
+.aboutParagraphs p {
+  padding-bottom: 25px;
+}
+
+/* PROJECTS */
+.projects {
+  margin-top: 75px;
+}
 
 .projectsContainer {
   width: 100%;
   height: 800px;
+}
+
+/* FOOTER */
+.footerContainer {
+  background-color: rgb(243, 191, 177);
+  color: rgb(212, 50, 50);
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+  text-align: center;
+}
+
+.footerContainer a {
+  color: rgb(212, 50, 50);
 }

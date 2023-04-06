@@ -1,10 +1,9 @@
 import React, { useRef }  from "react";
-import { useNavigate } from "react-router-dom";
-import { About, Projects } from "./exports";
+import { About, Projects, SkillStack } from "./exports";
+import {FaAngleDown} from "react-icons/fa";
 
 
 const Home = () => {
-const navigate = useNavigate()
 const aboutSection = useRef(null);
 const projectsSection = useRef(null);
 
@@ -26,19 +25,20 @@ const scrollTo = (pageSection) => { window.scrollTo({ top: pageSection.current.o
       <div>
         <div className="homeDetails">
           <div><i>Fullstack Web Developer</i></div>
-          <div><button onClick={((e)=>{
+          {/* <div><button onClick={((e)=>{
             e.preventDefault();
             scrollTo(aboutSection)
           })}>• About •</button>
           <button onClick={((e)=>{
             e.preventDefault();
             scrollTo(projectsSection)
-          })}>• Projects •</button></div>
+          })}>• Projects •</button></div> */}
+          <div className="downArrow"><FaAngleDown /></div>
         </div>
       </div>
-
           <div className="about" ref={aboutSection}><About /></div>
          <div className="projects" ref={projectsSection}><Projects /></div> 
+         <div><SkillStack/></div>
     </div>
   );
 };
