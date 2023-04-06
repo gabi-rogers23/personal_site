@@ -1,5 +1,5 @@
 import React, { useRef }  from "react";
-import { About, Projects, SkillStack } from "./exports";
+import { About, Projects, SkillStack, Connect } from "./exports";
 import {FaAngleDown} from "react-icons/fa";
 
 
@@ -39,6 +39,7 @@ const scrollTo = (pageSection) => { window.scrollTo({ top: pageSection.current.o
           <div className="about" ref={aboutSection}><About /></div>
          <div className="projects" ref={projectsSection}><Projects /></div> 
          <div><SkillStack/></div>
+         <div><Connect/></div>
     </div>
   );
 };
