@@ -38,8 +38,8 @@ const scrollTo = (pageSection) => { window.scrollTo({ top: pageSection.current.o
       </div>
           <div className="about" ref={aboutSection}><About /></div>
          <div className="projects" ref={projectsSection}><Projects /></div> 
-         <div><SkillStack/></div>
-         <div><Connect/></div>
+         <div className="skills"><SkillStack/></div>
+         <div className="connect"><Connect/></div>
     </div>
   );
 };

@@ -9,7 +9,7 @@ import { TbBrandGithub } from "react-icons/tb";
 const Projects = () => {
   return (
     <>
-      <h2 className="hello">PROJECTS</h2>
+      <h2 className="mainTitle">PROJECTS</h2>
       <div className="projectsContainer">
         <div className="projectSection">
           <div className="project">
