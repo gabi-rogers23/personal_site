@@ -484,11 +484,10 @@ li p{
 
 @media screen and (max-width: 400px){
   .project {
-    height: 250px;
-    width: 250px;
+    height: 275px;
+    width: 275px;
     font-size: x-small;
     margin: 15px;
-    overflow: scroll;
   }
 
   .footerContainer{
