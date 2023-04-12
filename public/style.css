@@ -494,8 +494,7 @@ li p{
     margin: 15px;
   }
 
-  .footerContainer{
-    width: 80%;
-    height: auto;
+  .footerContainer p{
+    width: 90%;
   }
 }
