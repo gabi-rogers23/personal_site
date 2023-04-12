@@ -43,11 +43,6 @@ li {
   text-align: center;
 }
 
-.navIcon {
-  color: rgb(212, 50, 50);
-  font-size: 25px;
-}
-
 .mainTitle {
   font-size: 3.5em;
   letter-spacing: 3px;
@@ -167,7 +162,7 @@ li {
 
 .navBigLetter {
   font-family: "Six Caps", sans-serif;
-  font-size: 7em;
+  font-size: 8em;
   letter-spacing: 3px;
   float: left;
   padding-left: 10px;
@@ -251,7 +246,7 @@ li {
 
 .aboutParagraphs {
   width: 30%;
-  min-width: 300px;
+  /* min-width: 300px; */
   padding: 25px;
   text-align: left;
   flex-grow: 2;
@@ -265,7 +260,7 @@ li {
 
 /* PROJECTS */
 .projects {
-  margin-top: 100px;
+  margin-top: 75px;
 }
 
 .projectsContainer {
@@ -364,17 +359,6 @@ li {
   flex-basis: 25%;
 }
 
-@media screen and (max-width: 600px){
-  .iconSkills li {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 75px 0 20px 0;
-    flex-basis: 50%
-  }
-}
-
 .icon {
   flex-basis: 25%;
   font-size: 50px;
@@ -450,4 +434,42 @@ li p{
 
 .footerContainer p {
   margin-left: 10px;
+}
+
+@media screen and (max-width: 600px){
+  .iconSkills li {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 75px 0 20px 0;
+    flex-basis: 50%
+  }
+
+  .project {
+    height: 350px;
+    width: 350px;
+    font-size: small;
+    margin: 15px;
+  }
+
+  .iconLine {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: auto;
+    margin: 30px 0 15px 0;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .aboutParagraphs {
+    flex-flow: row wrap;
+    flex-grow: 1;
+    width: 75%;
+  }
+
+  .footerContainer{
+    font-size: x-small;
+  }
 }
