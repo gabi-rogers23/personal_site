@@ -87,7 +87,6 @@ li {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
 }
 
 .name h1 {
