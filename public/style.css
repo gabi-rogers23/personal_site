@@ -496,5 +496,6 @@ li p{
 
   .footerContainer{
     width: 80%;
+    height: auto;
   }
 }
