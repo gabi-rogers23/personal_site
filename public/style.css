@@ -421,7 +421,7 @@ li p{
   font-size: 15px;
   letter-spacing: 3px;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
   left: 0;
@@ -429,10 +429,6 @@ li p{
   width: 100%;
   height: 50px;
   text-align: center;
-}
-
-.footerContainer p {
-  margin-left: 10px;
 }
 
 @media screen and (max-width: 600px){
@@ -494,7 +490,7 @@ li p{
     margin: 15px;
   }
 
-  .footerContainer p{
-    width: 90%;
+  .footerContainer{
+    font-size: xx-small;
   }
 }
