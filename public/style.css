@@ -10,6 +10,7 @@ body {
   background-color: rgba(243, 191, 177, 0.625);
   font-family: "Poppins", sans-serif;
   color: rgb(212, 50, 50);
+  font-size: 100%;
 }
 
 button {
@@ -78,29 +79,28 @@ li {
   flex-flow: row wrap;
   justify-content: center;
   width: 100%;
-  padding: 0;
+  text-align: center;
 }
 
 .name {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  justify-content: center;
-  padding-left: 50px;
+  align-items: center;
+  border: 1px solid black;
 }
 
 .name h1 {
-  padding-top: 215px;
   font-family: "Six Caps", sans-serif;
-  font-size: 10em;
+  font-size: 15em;
   letter-spacing: 3px;
 }
 
 .bigletter {
   font-family: "Six Caps", sans-serif;
   letter-spacing: 3px;
-  font-size: 30em;
-  height: 550px;
+  font-size: 35em;
+  height: auto;
 }
 
 .homeDetails {
@@ -113,6 +113,7 @@ li {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 
 .downArrow {
@@ -467,6 +468,14 @@ li p{
     flex-flow: row wrap;
     flex-grow: 1;
     width: 75%;
+  }
+
+  .name h1 {
+    font-size: 5em;
+  }
+
+  .bigletter {
+    font-size: 25em;
   }
 
   .footerContainer{
