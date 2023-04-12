@@ -488,7 +488,11 @@ li p{
     width: 250px;
     font-size: small;
     margin: 15px;
-    overflow: visible;
+  }
+
+  .overlay {
+    height: auto;
+    width: 250px;
   }
 
   .footerContainer{
