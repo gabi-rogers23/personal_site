@@ -4,8 +4,10 @@ import { TbBrandGithub } from "react-icons/tb";
 import { RiLinkedinBoxLine } from "react-icons/ri";
 
 const Connect = () => {
-    return(<div className="connectContainer">
-        This is the Connect Page
+    return(
+    <>
+    <div className="mainTitle">CONNECT</div>
+    <div className="connectContainer">
         <ul>
         <li>contact</li>
         <li>{"="}</li>
@@ -26,7 +28,7 @@ const Connect = () => {
         </li>
         <li>{"}"}</li>
       </ul>
-    </div>)
+    </div></>)
 }
 
 export default Connect;
