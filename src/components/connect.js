@@ -9,14 +9,15 @@ const Connect = () => {
       <div className="mainTitle">CONNECT</div>
       <div className="connectContainer">
         <ul className="connectList">
+          <li>Like what you see?  Find me here:</li>
           <li>
             <a href="mailto:gabirogers23@gmail.com">
-             Email <HiOutlineMail/>
+             <HiOutlineMail/> Email 
             </a>
           </li>
           <li>
             <a href="https://github.com/gabi-rogers23" target="_blank">
-              GitHub <TbBrandGithub/>
+            <TbBrandGithub/> GitHub
             </a>
           </li>
           <li>
@@ -24,7 +25,7 @@ const Connect = () => {
               href="https://www.linkedin.com/in/rogers-gabrielle/"
               target="_blank"
             >
-              LinkedIn <RiLinkedinBoxLine/>
+             <RiLinkedinBoxLine/> LinkedIn 
             </a>
           </li>
         </ul>
