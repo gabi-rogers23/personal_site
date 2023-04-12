@@ -492,6 +492,13 @@ li p{
     border-radius: 10%;
   }
 
+  .project a{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
   .overlay {
     border-radius: 10%;
   }
