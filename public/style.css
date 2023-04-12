@@ -486,13 +486,9 @@ li p{
   .project {
     height: 250px;
     width: 250px;
-    font-size: small;
+    font-size: x-small;
     margin: 15px;
-  }
-
-  .overlay {
-    height: auto;
-    width: 250px;
+    overflow: scroll;
   }
 
   .footerContainer{
