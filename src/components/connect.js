@@ -8,25 +8,16 @@ const Connect = () => {
     <>
     <div className="mainTitle">CONNECT</div>
     <div className="connectContainer">
-        <ul>
-        <li>contact</li>
-        <li>{"="}</li>
-        <li>{"{"}</li>
-        <li>{"email:  "}</li>
+        <ul className="connectList">
         <li>
-        <a href="mailto:gabirogers23@gmail.com" > <HiOutlineMail className="navIcon" /> </a>
+        Email <a href="mailto:gabirogers23@gmail.com" > <HiOutlineMail className="navIcon" /> </a>
         </li>
-        <li>,</li>
-        <li>GitHub:  </li>
         <li>
-          <a href="https://github.com/gabi-rogers23" target="_blank">  <TbBrandGithub className="navIcon" /></a>
+         GitHub <a href="https://github.com/gabi-rogers23" target="_blank">  <TbBrandGithub className="navIcon" /></a>
         </li>
-        <li>,</li>
-        <li>LinkedIn:</li>
         <li>
-        <a href="https://www.linkedin.com/in/rogers-gabrielle/" target="_blank"><RiLinkedinBoxLine className="navIcon"/></a>
+        LinkedIn<a href="https://www.linkedin.com/in/rogers-gabrielle/" target="_blank"><RiLinkedinBoxLine className="navIcon"/></a>
         </li>
-        <li>{"}"}</li>
       </ul>
     </div></>)
 }
