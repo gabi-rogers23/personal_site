@@ -59,24 +59,14 @@ li {
   border-bottom: 1px solid rgba(212, 50, 50, 0.237);
   margin-bottom: 5px;
   letter-spacing: 3px;
+  color: rgb(212, 50, 50);
 }
 
 /* HOME */
 .homeContainer {
   margin-top: -50px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   animation: 1.5s fadein;
-}
-
-@keyframes fadeInUp {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
 }
 
 @keyframes fadein {
@@ -298,7 +288,7 @@ li {
   width: 450px;
   margin: 50px;
   box-shadow: rgba(251, 193, 193, 0.372) 0px 1px 1px 0px inset, rgba(177, 104, 104, 0.25) 0px 50px 100px -20px, rgba(114, 46, 46, 0.3) 0px 30px 60px -30px;
-  border-radius: 15%;
+  border-radius: 50%;
   position: relative;
   display: flex;
   flex-flow: row wrap;
@@ -309,17 +299,21 @@ li {
 .projectImg {
   height: 85%;
   width: 85%;
-  border-radius: 15%;
+  border-radius: 50%;
+}
+
+.projectImg:hover {
+  opacity: 50%;
 }
 
 .overlay {
   position: absolute;
   bottom: 0;
-  border-radius: 15%;
+  border-radius: 50%;
   background: rgba(243, 191, 177, 0.90);
   width: 100%;
   height: 100%;
-  transition: 0.5s ease-in;
+  transition: 0.5s ease-in-out;
   opacity: 0;
   padding: 25px;
   text-align: center;
@@ -418,7 +412,22 @@ li p{
 .connectList {
   margin: 50px 0 50px 0;
   letter-spacing: 3px;
-  font-size: 30px;
+  font-size: 20px;
+}
+
+.connectList li{
+  margin-top: 15px;
+}
+
+.connectList a {
+  text-decoration: none;
+  color: rgb(212, 50, 50);
+  transition: .5s ease-in-out;
+}
+
+.connectList a:hover {
+  border-bottom: 2px solid white;
+  color: white;
 }
 
 /* FOOTER */
