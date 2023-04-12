@@ -473,3 +473,12 @@ li p{
     font-size: x-small;
   }
 }
+
+@media screen and (max-width: 400px){
+  .project {
+    height: 300px;
+    width: 300px;
+    font-size: small;
+    margin: 15px;
+  }
+}
