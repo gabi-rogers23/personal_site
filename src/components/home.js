@@ -1,8 +1,11 @@
-import React, { useRef } from "react";
-import { About, Projects, SkillStack, Connect } from "./exports";
+import React, { useRef, useState } from "react";
+import { About, Projects, SkillStack, Connect, NavBar } from "./exports";
 import { FaAngleDown } from "react-icons/fa";
+import { CgMenuCake } from "react-icons/cg";
 
 const Home = () => {
+  const [click, setClick] = useState(false);
+
   const aboutSection = useRef(null);
   const projectsSection = useRef(null);
 
@@ -10,8 +13,10 @@ const Home = () => {
     window.scrollTo({ top: pageSection.current.offsetTop, behavior: "smooth" });
   };
 
-  return (
+  return (<><button className="menuIcon"><CgMenuCake className="cake"/></button>
     <div className="homeContainer">
+      
+      {click && <NavBar/>}
       <div className="nameLogo">
         <div className="name">
           <div className="bigletter">G</div>
@@ -53,7 +58,7 @@ const Home = () => {
       <div className="connect">
         <Connect />
       </div>
-    </div>
+    </div></>
   );
 };
 

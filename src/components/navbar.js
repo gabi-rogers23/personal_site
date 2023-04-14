@@ -8,13 +8,18 @@ function NavBar() {
 
         <nav className="navContainer">
           <NavLink to="/" end className="nav_link">
-            • Home •
           </NavLink>
           <NavLink to="/about" className="nav_link" activeClassName="active">
-            • About •
+            About
           </NavLink>
           <NavLink to="/projects" className="nav_link">
-            • Projects •
+            Projects
+          </NavLink>
+          <NavLink>
+            Skills
+          </NavLink>
+          <NavLink>
+            Connect
           </NavLink>
         </nav>
         <div className="header">
