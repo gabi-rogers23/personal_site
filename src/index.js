@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { NavBar, Home, About, Projects, Footer } from "./components/exports"
+import { Home, About, Projects, Footer } from "./components/exports"
 
 
 const App = () => {

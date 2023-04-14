@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
-import { RiHomeHeartFill, RiQuestionnaireFill } from "react-icons/ri";
+import { CgCloseO } from "react-icons/cg";
 
-function NavBar() {
+function NavBar(props) {
   return (
     <div className="headerContainer">
+      <button className="menuIcon"
+      onClick={((e)=>{
+        e.preventDefault();
+        props.setShowMenu(false)
+      })}><CgCloseO className="cake"/></button>
         <nav className="navContainer">
           <NavLink to="/" end className="nav_link">
           </NavLink>
-          <NavLink to="/about" className="nav_link" activeClassName="active">
+          <NavLink to="/about" className="nav_link">
             About
           </NavLink>
           <NavLink to="/projects" className="nav_link">
