@@ -149,47 +149,30 @@ li {
 /* NAVBAR */
 
 .headerContainer {
-  width: 100%;
+  width: 35%;
+  height: 150%;
   background-color: rgb(243, 191, 177);
-  display: flex;
-  flex-flow: row nowrap;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index : 10000
 }
 
-.header {
-  width: 70%;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: center;
+.menu{
+  transform: translateX(-100%);
 }
 
-.navNameLogo {
-  float: left;
-  margin-left: 50px;
-  align-self: center;
-}
-
-.header h1 {
-  font-family: "Six Caps", sans-serif;
-  letter-spacing: 3px;
-  float: left;
-  padding-top: 50px;
-}
-
-.navBigLetter {
-  font-family: "Six Caps", sans-serif;
-  font-size: 8em;
-  letter-spacing: 3px;
-  float: left;
-  padding-left: 10px;
+.menu_active{
+  opacity: 1;
+  transform: translate(0%, 0%);
 }
 
 .navContainer {
-  width: 15%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 50px;
 }
 
 .nav_link {
@@ -202,10 +185,6 @@ li {
   border-bottom: 0.5px solid white;
 }
 
-.active {
-  border-bottom: 1px solid white;
-  color: white;
-}
 
 /* ABOUT */
 

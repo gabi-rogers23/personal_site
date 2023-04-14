@@ -4,7 +4,7 @@ import { FaAngleDown } from "react-icons/fa";
 import { CgMenuCake } from "react-icons/cg";
 
 const Home = () => {
-  const [click, setClick] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   const aboutSection = useRef(null);
   const projectsSection = useRef(null);
@@ -14,9 +14,8 @@ const Home = () => {
   };
 
   return (<><button className="menuIcon"><CgMenuCake className="cake"/></button>
-    <div className="homeContainer">
-      
-      {click && <NavBar/>}
+    <NavBar/>
+    <div className="homeContainer">   
       <div className="nameLogo">
         <div className="name">
           <div className="bigletter">G</div>
