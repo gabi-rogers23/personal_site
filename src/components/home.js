@@ -14,12 +14,11 @@ const Home = () => {
 
   return (
     <>
-      {showMenu ? <NavBar setShowMenu={setShowMenu()}/> : <button
+      {showMenu ? <NavBar setShowMenu={setShowMenu}/> : <button
         className="menuIcon"
         onClick={((e) => {
           e.preventDefault();
           setShowMenu(true);
-          console.log(showMenu);
         })}>
         <CgMenuCake className="cake"/>
       </button>}
