@@ -73,6 +73,15 @@ li {
   }
 }
 
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 .cake {
   font-size: 4em;
 }
@@ -155,7 +164,12 @@ li {
   position: fixed;
   top: 0px;
   right: 0px;
-  z-index : 10000
+  z-index : 10000;
+  animation: 1s fadein;
+}
+
+.headerContainer.out {
+  animation: 1s fadeout;
 }
 
 .menu{
@@ -173,6 +187,10 @@ li {
   align-items: center;
   justify-content: space-evenly;
   margin-top: 50px;
+}
+
+.navContainer::after{
+  animation: 1s fadeOut;
 }
 
 .nav_link {
