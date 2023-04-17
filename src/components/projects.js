@@ -43,11 +43,11 @@ const Projects = () => {
               </div>
               <div>React | CSS | HTML | Express | PostgreSQL | Bcrypt | Node | Faker | Notistack </div>
               <div>
-              <a href="https://brilliant-daffodil-f42560.netlify.app" target="_blank">
+              <a href="https://in-the-books.netlify.app" target="_blank">
                 <button>View Site
                   <IoIosOpen />
                 </button></a>
-                <a href="https://github.com/InTheBooks/in-the-books-shop" target="_blank">
+                <a href="https://github.com/gabi-rogers23/in_the_books" target="_blank">
                   <button>
                     GitHub
                     <TbBrandGithub />
