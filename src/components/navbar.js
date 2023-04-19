@@ -2,14 +2,20 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { CgCloseO } from "react-icons/cg";
 
-function NavBar(props) {
+function NavBar({setShowMenu}) {
+  const [isOpen, setOpen] = useState(true);
+
+  const closeMenu = () =>{
+    setShowMenu(false)
+  }
   return (
-    <div className="headerContainer">
+    <div className={isOpen ? 'headerContainerFadeIn' : 'fadeOut'}>
       <button
         className="menuIcon"
         onClick={(e) => {
           e.preventDefault();
-          props.setShowMenu(false);
+          setOpen(false)
+          setTimeout(closeMenu, 1000)
         }}
       >
         <CgCloseO className="cake" />

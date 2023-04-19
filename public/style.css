@@ -92,6 +92,7 @@ li {
   position: fixed;
   top: 15px;
   right: 15px;
+  animation: fadein 1s linear forwards; 
 }
 
 .menuIcon:hover {
@@ -157,7 +158,7 @@ li {
 
 /* NAVBAR */
 
-.headerContainer {
+.headerContainerFadeIn {
   width: 35%;
   height: 150%;
   background-color: rgb(243, 191, 177);
@@ -165,21 +166,23 @@ li {
   top: 0px;
   right: 0px;
   z-index : 10000;
-  animation: 1s fadein;
+  transition: opacity .5s;
+  animation: 1s fadein linear forwards;
 }
 
-.headerContainer.out {
-  animation: 1s fadeout;
+
+.fadeOut {
+  width: 35%;
+  height: 150%;
+  background-color: rgb(243, 191, 177);
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index : 10000;
+  transition: opacity .5s;
+  animation: fadeout 1s linear forwards;
 }
 
-.menu{
-  transform: translateX(-100%);
-}
-
-.menu_active{
-  opacity: 1;
-  transform: translate(0%, 0%);
-}
 
 .navContainer {
   display: flex;
