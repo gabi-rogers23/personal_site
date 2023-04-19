@@ -17,7 +17,7 @@ function NavBar({ setShowMenu }) {
         onClick={(e) => {
           e.preventDefault();
           setOpen(false);
-          setTimeout(closeMenu, 210);
+          setTimeout(closeMenu, 230);
         }}
       >
         <CgCloseO className="cake" />
