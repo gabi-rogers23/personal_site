@@ -8,19 +8,21 @@ const Home = () => {
 
   return (
     <>
-        {showMenu ? <NavBar setShowMenu={setShowMenu} showMenu={showMenu}/> :
+      {showMenu ? (
+        <NavBar setShowMenu={setShowMenu} />
+      ) : (
         <button
           className="menuIcon"
           onClick={(e) => {
             e.preventDefault();
             setShowMenu(true);
           }}
-          >
+        >
           {console.log(showMenu)}
           <CgMenuCake className="cake" />
         </button>
-}
-        {console.log(showMenu)}
+      )}
+      {console.log(showMenu)}
       <div className="homeContainer">
         <div className="nameLogo">
           <div className="name">

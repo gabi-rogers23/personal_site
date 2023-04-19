@@ -2,34 +2,36 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { CgCloseO } from "react-icons/cg";
 
-function NavBar({setShowMenu}) {
+function NavBar({ setShowMenu }) {
   const [isOpen, setOpen] = useState(true);
 
-  const closeMenu = () =>{
-    setShowMenu(false)
-  }
+  const closeMenu = () => {
+    setShowMenu(false);
+  };
   return (
-    <div className={isOpen ? 'headerContainerFadeIn' : 'headerContainerFadeOut'}>
+    <div
+      className={isOpen ? "headerContainerFadeIn" : "headerContainerFadeOut"}
+    >
       <button
         className="menuIcon"
         onClick={(e) => {
           e.preventDefault();
-          setOpen(false)
-          setTimeout(closeMenu, 210)
+          setOpen(false);
+          setTimeout(closeMenu, 210);
         }}
       >
         <CgCloseO className="cake" />
       </button>
       <nav className="navContainer">
-        <NavLink to="/" end className="nav_link"></NavLink>
-        <NavLink to="/about" className="nav_link">
+        <NavLink className="nav_link"></NavLink>
+        <NavLink className="nav_link">
           About
         </NavLink>
         <NavLink to="/projects" className="nav_link">
           Projects
         </NavLink>
-        <NavLink>Skills</NavLink>
-        <NavLink>Connect</NavLink>
+        <NavLink className="nav_link">Skills</NavLink>
+        <NavLink className="nav_link">Connect</NavLink>
       </nav>
     </div>
   );
