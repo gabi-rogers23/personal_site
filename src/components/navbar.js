@@ -9,13 +9,13 @@ function NavBar({setShowMenu}) {
     setShowMenu(false)
   }
   return (
-    <div className={isOpen ? 'headerContainerFadeIn' : 'fadeOut'}>
+    <div className={isOpen ? 'headerContainerFadeIn' : 'headerContainerFadeOut'}>
       <button
         className="menuIcon"
         onClick={(e) => {
           e.preventDefault();
           setOpen(false)
-          setTimeout(closeMenu, 1000)
+          setTimeout(closeMenu, 210)
         }}
       >
         <CgCloseO className="cake" />

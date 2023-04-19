@@ -167,11 +167,11 @@ li {
   right: 0px;
   z-index : 10000;
   transition: opacity .5s;
-  animation: 1s fadein linear forwards;
+  animation: fadein .2s linear forwards;
 }
 
 
-.fadeOut {
+.headerContainerFadeOut {
   width: 35%;
   height: 150%;
   background-color: rgb(243, 191, 177);
@@ -180,7 +180,7 @@ li {
   right: 0px;
   z-index : 10000;
   transition: opacity .5s;
-  animation: fadeout 1s linear forwards;
+  animation: fadeout .2s linear forwards;
 }
 
 
