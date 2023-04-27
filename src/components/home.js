@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { About, Projects, SkillStack, Connect, NavBar } from "./exports";
 import { FaAngleDown } from "react-icons/fa";
 import { CgMenuCake } from "react-icons/cg";
 
 const Home = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const aboutSection = useRef()
+  const scrollTo = (pageSection) => { window.scrollTo({ top: pageSection.current.offsetTop, behavior: 'smooth', transition: '1s' });}
 
   return (
     <>
@@ -39,12 +41,15 @@ const Home = () => {
             <div>
               <i>Fullstack Web Developer</i>
             </div>
-            <div className="downArrow">
+            <div className="downArrow" onClick={((e)=>{
+              e.preventDefault()
+              scrollTo(aboutSection)
+            })}>
               <FaAngleDown />
             </div>
           </div>
         </div>
-        <div className="about">
+        <div className="about" ref={aboutSection}>
           <About />
         </div>
         <div className="projects">
