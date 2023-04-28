@@ -84,7 +84,11 @@ li {
 }
 
 .cake {
-  font-size: 4em;
+  font-size: 3.5em;
+}
+
+.close {
+  font-size: 3em;
 }
 
 .menuIcon {
@@ -198,7 +202,7 @@ li {
   text-decoration: none;
   padding: 3px;
   color: rgb(212, 50, 50);
-  font-size: 1.25em;
+  font-size: 1.1em;
   letter-spacing: 3px;
   text-transform: uppercase;
   transition: 0.5s ease-in-out;
@@ -464,6 +468,10 @@ li p {
     flex-basis: 50%;
   }
 
+    .homeDetails {
+    margin-top: -10px;
+  }
+
   .project {
     height: 350px;
     width: 350px;
@@ -503,6 +511,7 @@ li p {
   .footerContainer {
     font-size: x-small;
   }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -528,6 +537,10 @@ li p {
 
   .projectImg {
     border-radius: 10%;
+  }
+
+  .nav_link {
+    font-size: .5em;
   }
 
   .footerContainer {

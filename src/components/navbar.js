@@ -9,7 +9,7 @@ function NavBar({
   projectSection,
   skillSection,
   contactSection,
-  homeSection
+  homeSection,
 }) {
   const [isOpen, setOpen] = useState(true);
 
@@ -29,16 +29,23 @@ function NavBar({
           setTimeout(closeMenu, 230);
         }}
       >
-        <CgCloseO className="cake" />
+        <CgCloseO className="close" />
       </button>
       <nav className="navContainer">
-        <li className="nav_link"    onClick={() => {
+        <li
+          className="nav_link"
+          onClick={() => {
             scrollTo(homeSection);
-          }}>Home</li>
+            setTimeout(closeMenu, 230);
+          }}
+        >
+          Home
+        </li>
         <li
           className="nav_link"
           onClick={() => {
             scrollTo(aboutSection);
+            setTimeout(closeMenu, 230);
           }}
         >
           About
@@ -48,6 +55,7 @@ function NavBar({
           className="nav_link"
           onClick={() => {
             scrollTo(projectSection);
+            setTimeout(closeMenu, 230);
           }}
         >
           Projects
@@ -56,6 +64,7 @@ function NavBar({
           className="nav_link"
           onClick={() => {
             scrollTo(skillSection);
+            setTimeout(closeMenu, 230);
           }}
         >
           Tool Kit
@@ -64,6 +73,7 @@ function NavBar({
           className="nav_link"
           onClick={() => {
             scrollTo(contactSection);
+            setTimeout(closeMenu, 230);
           }}
         >
           Connect
