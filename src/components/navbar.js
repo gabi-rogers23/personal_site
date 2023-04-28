@@ -2,12 +2,21 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { CgCloseO } from "react-icons/cg";
 
-function NavBar({ setShowMenu }) {
+function NavBar({
+  setShowMenu,
+  scrollTo,
+  aboutSection,
+  projectSection,
+  skillSection,
+  contactSection,
+  homeSection
+}) {
   const [isOpen, setOpen] = useState(true);
 
   const closeMenu = () => {
     setShowMenu(false);
   };
+
   return (
     <div
       className={isOpen ? "headerContainerFadeIn" : "headerContainerFadeOut"}
@@ -23,15 +32,42 @@ function NavBar({ setShowMenu }) {
         <CgCloseO className="cake" />
       </button>
       <nav className="navContainer">
-        <NavLink className="nav_link"></NavLink>
-        <NavLink className="nav_link">
+        <li className="nav_link"    onClick={() => {
+            scrollTo(homeSection);
+          }}>Home</li>
+        <li
+          className="nav_link"
+          onClick={() => {
+            scrollTo(aboutSection);
+          }}
+        >
           About
-        </NavLink>
-        <NavLink to="/projects" className="nav_link">
+        </li>
+        <li
+          to="/projects"
+          className="nav_link"
+          onClick={() => {
+            scrollTo(projectSection);
+          }}
+        >
           Projects
-        </NavLink>
-        <NavLink className="nav_link">Skills</NavLink>
-        <NavLink className="nav_link">Connect</NavLink>
+        </li>
+        <li
+          className="nav_link"
+          onClick={() => {
+            scrollTo(skillSection);
+          }}
+        >
+          Tool Kit
+        </li>
+        <li
+          className="nav_link"
+          onClick={() => {
+            scrollTo(contactSection);
+          }}
+        >
+          Connect
+        </li>
       </nav>
     </div>
   );

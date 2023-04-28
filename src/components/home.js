@@ -5,13 +5,18 @@ import { CgMenuCake } from "react-icons/cg";
 
 const Home = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const homeSection = useRef()
   const aboutSection = useRef()
+  const projectSection = useRef()
+  const skillSection = useRef()
+  const contactSection = useRef()
+
   const scrollTo = (pageSection) => { window.scrollTo({ top: pageSection.current.offsetTop, behavior: 'smooth', transition: '1s' });}
 
   return (
     <>
       {showMenu ? (
-        <NavBar setShowMenu={setShowMenu} />
+        <NavBar setShowMenu={setShowMenu} scrollTo={scrollTo} aboutSection={aboutSection} projectSection={projectSection} skillSection={skillSection} contactSection={contactSection} homeSection={homeSection}/>
       ) : (
         <button
           className="menuIcon"
@@ -25,8 +30,10 @@ const Home = () => {
         </button>
       )}
       {console.log(showMenu)}
-      <div className="homeContainer">
-        <div className="nameLogo">
+      <div className="homeContainer" onClick={()=>{
+        setShowMenu(false)
+      }}>
+        <div className="nameLogo" ref={homeSection}>
           <div className="name">
             <div className="bigletter">G</div>
             <h1>abrielle</h1>
@@ -52,13 +59,13 @@ const Home = () => {
         <div className="about" ref={aboutSection}>
           <About />
         </div>
-        <div className="projects">
+        <div className="projects" ref={projectSection}>
           <Projects />
         </div>
-        <div className="skills">
+        <div className="skills" ref={skillSection}>
           <SkillStack />
         </div>
-        <div className="connect">
+        <div className="connect" ref={contactSection}>
           <Connect />
         </div>
       </div>
