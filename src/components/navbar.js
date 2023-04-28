@@ -1,29 +1,38 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { RiHomeHeartFill, RiQuestionnaireFill } from "react-icons/ri";
+import { CgCloseO } from "react-icons/cg";
 
-function NavBar() {
+function NavBar({ setShowMenu }) {
+  const [isOpen, setOpen] = useState(true);
+
+  const closeMenu = () => {
+    setShowMenu(false);
+  };
   return (
-    <div className="headerContainer">
-
-        <nav className="navContainer">
-          <NavLink to="/" end className="nav_link">
-            • Home •
-          </NavLink>
-          <NavLink to="/about" className="nav_link" activeClassName="active">
-            • About •
-          </NavLink>
-          <NavLink to="/projects" className="nav_link">
-            • Projects •
-          </NavLink>
-        </nav>
-        <div className="header">
-        <div id="navNameLogo">
-          <div class="navBigLetter">G</div>
-          <h1>abrielle</h1>
-          <div class="navBigLetter">R</div>
-          <h1>ogers</h1>
-        </div></div>
+    <div
+      className={isOpen ? "headerContainerFadeIn" : "headerContainerFadeOut"}
+    >
+      <button
+        className="menuIcon"
+        onClick={(e) => {
+          e.preventDefault();
+          setOpen(false);
+          setTimeout(closeMenu, 230);
+        }}
+      >
+        <CgCloseO className="cake" />
+      </button>
+      <nav className="navContainer">
+        <NavLink className="nav_link"></NavLink>
+        <NavLink className="nav_link">
+          About
+        </NavLink>
+        <NavLink to="/projects" className="nav_link">
+          Projects
+        </NavLink>
+        <NavLink className="nav_link">Skills</NavLink>
+        <NavLink className="nav_link">Connect</NavLink>
+      </nav>
     </div>
   );
 }
