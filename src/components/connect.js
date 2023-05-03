@@ -11,7 +11,7 @@ const Connect = () => {
         <ul className="connectList">
           <li>Like what you see?  Find me here:</li>
           <li>
-            <a href="mailto:gabirogers23@gmail.com">
+            <a href="mailto:contact@gabriellerogers.io">
              <HiOutlineMail/> Email 
             </a>
           </li>
