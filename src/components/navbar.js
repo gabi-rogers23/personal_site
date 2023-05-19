@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 import { CgCloseO } from "react-icons/cg";
 
 function NavBar({
@@ -78,6 +77,14 @@ function NavBar({
         >
           Connect
         </li>
+        <a
+          className="nav_link"
+          href="https://docs.google.com/document/d/1BehjqshZaFEpNsTt1kjcjpiGrwALbwLaRUkSShFpmLQ/edit?usp=sharing"
+          target="_blank"
+          onClick={()=> closeMenu()}
+        >
+        Resume
+        </a>
       </nav>
     </div>
   );
