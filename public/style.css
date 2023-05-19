@@ -84,11 +84,11 @@ li {
 }
 
 .cake {
-  font-size: 3.5em;
+  font-size: 3em;
 }
 
 .close {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .menuIcon {
@@ -515,6 +515,19 @@ li p {
 }
 
 @media screen and (max-width: 400px) {
+
+.headerContainerFadeIn{
+  width: 100%;
+}
+
+.cake {
+  font-size: 2em;
+}
+
+.close {
+  font-size: 1.5em;
+}
+
   .project {
     height: 275px;
     width: 275px;
@@ -540,7 +553,7 @@ li p {
   }
 
   .nav_link {
-    font-size: .5em;
+    font-size: .75em;
   }
 
   .footerContainer {
