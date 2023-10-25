@@ -12,6 +12,30 @@ const Projects = () => {
       <h2 className="mainTitle">PROJECTS</h2>
       <div className="projectsContainer">
         <div className="projectSection">
+
+        <div className="project">
+            <img className="projectImg" src={trace}></img>
+            <div className="overlay">
+              <h2 className="sectionTitle"> Trace Diagnositcs </h2>
+              <div>
+              A web application for a small business.
+              </div>
+              <div>Javascript | React | MaterialUI | Node | HTML | CSS</div>
+              <div>
+              <a href="http://tracedx.com" target="_blank">
+                <button>View Site
+                  <IoIosOpen />
+                </button></a>
+                <a href="https://github.com/gabi-rogers23/trace_diagnostics" target="_blank">
+                  <button>
+                    GitHub
+                    <TbBrandGithub />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div className="project">
             <img className="projectImg" src={stranger}></img>
             <div className="overlay">
@@ -34,6 +58,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
+
           <div className="project">
             <img className="projectImg" src={books}></img>
             <div className="overlay">
@@ -48,25 +73,6 @@ const Projects = () => {
                   <IoIosOpen />
                 </button></a>
                 <a href="https://github.com/gabi-rogers23/in_the_books" target="_blank">
-                  <button>
-                    GitHub
-                    <TbBrandGithub />
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="project">
-            <img className="projectImg" src={trace}></img>
-            <div className="overlay">
-              <h2 className="sectionTitle"> Trace Diagnositcs </h2>
-              <div>
-              A web application for a small business.
-              </div>
-              <div>Javascript | React | MaterialUI | Node | HTML | CSS</div>
-              <div>
-                <a href="https://github.com/gabi-rogers23/trace_diagnostics" target="_blank">
                   <button>
                     GitHub
                     <TbBrandGithub />
