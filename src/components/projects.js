@@ -1,7 +1,7 @@
 import React from "react";
 const stranger = require("./assets/Stranger'sThings.png");
 const books = require("./assets/InTheBooks.png")
-const fitness = require("./assets/fitness.png")
+const trace = require("./assets/TraceDx.png")
 const mancala = require("./assets/Mancala.png")
 import { IoIosOpen } from "react-icons/io";
 import { TbBrandGithub } from "react-icons/tb";
@@ -58,15 +58,15 @@ const Projects = () => {
           </div>
 
           <div className="project">
-            <img className="projectImg" src={fitness}></img>
+            <img className="projectImg" src={trace}></img>
             <div className="overlay">
-              <h2 className="sectionTitle"> FITNESS TRACK.R </h2>
+              <h2 className="sectionTitle"> Trace Diagnositcs </h2>
               <div>
-              An application where users can sign-in to create and track exercise routines.
+              A web application for a small business.
               </div>
-              <div>Express | PostgreSQL | Bcrypt | Node  </div>
+              <div>Javascript | React | MaterialUI | Node | HTML | CSS</div>
               <div>
-                <a href="https://github.com/gabi-rogers23/Fitness_Track.r" target="_blank">
+                <a href="https://github.com/gabi-rogers23/trace_diagnostics" target="_blank">
                   <button>
                     GitHub
                     <TbBrandGithub />
